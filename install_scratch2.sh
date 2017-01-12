@@ -1,6 +1,11 @@
 #!/bin/sh
 
 # Created by HSIEH, Li-Yi (lyshie@tn.edu.tw)
+#
+# How to install dependencies:
+# http://www.zealfortechnology.com/2012/05/install-adobe-air-on-fedora.html
+# https://aur.archlinux.org/packages/adobe-air-sdk
+# https://aur.archlinux.org/packages/scratch2/
 
 # Adobe Air installation path
 AIR_FILE="/tmp/AdobeAIRSDK.tbz2"
