@@ -36,7 +36,7 @@ ln -fs "${AIR_TARGET}/runtimes/air/linux/Adobe AIR" /opt/
 # Download Scratch 2 Offline Editor
 # The current version is 453.
 # https://scratch.mit.edu/scratch2download/
-wget -q "https://scratch.mit.edu/scratchr2/static/sa/Scratch-${VERSION}.air" -O "${SCRATCH2_FILE}"
+wget -q --no-check-certificate "https://scratch.mit.edu/scratchr2/static/sa/Scratch-${SCRATCH2_VERSION}.air" -O "${SCRATCH2_FILE}"
 
 # Check if target exists
 if [ -d "${SCRATCH2_TARGET}" ]; then
@@ -45,6 +45,7 @@ if [ -d "${SCRATCH2_TARGET}" ]; then
 fi
 
 # Extract files into target
+mkdir -p "${SCRATCH2_TARGET}"
 unzip "${SCRATCH2_FILE}" -d "${SCRATCH2_TARGET}"
 
 # Create an executable command
