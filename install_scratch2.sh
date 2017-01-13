@@ -7,6 +7,7 @@
 # https://aur.archlinux.org/packages/adobe-air-sdk
 # https://aur.archlinux.org/packages/scratch2/
 
+
 # Adobe Air installation path
 AIR_FILE="/tmp/AdobeAIRSDK.tbz2"
 AIR_TARGET="/opt/adobe-air-sdk"
@@ -55,3 +56,11 @@ ${AIR_TARGET}/bin/adl -nodebug ${SCRATCH2_TARGET}/META-INF/AIR/application.xml $
 EOF
 
 chmod a+x "/usr/local/bin/scratch2"
+
+cat << EOF
+Do not forget to install the following packages!
+  1. # dnf install libXt.i686
+  2. # dnf install gtk2.i686
+  3. # dnf install nss.i686
+  4. # dnf install nspr.i686
+EOF
