@@ -63,4 +63,5 @@ Do not forget to install the following packages!
   2. # dnf install gtk2.i686
   3. # dnf install nss.i686
   4. # dnf install nspr.i686
+  5. # dnf install libxml2.i686
 EOF
