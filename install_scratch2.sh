@@ -61,6 +61,15 @@ EOF
 
 chmod a+x "/usr/local/bin/scratch2"
 
+# Upload icons and create a .desktop entry
+cp -f icons/scratch2-editor-48.png /usr/share/icons/hicolor/48x48/apps/scratch2-editor.png
+cp -f icons/scratch2-editor-128.png /usr/share/icons/hicolor/128x128/apps/scratch2-editor.png
+cp -n icons/gnome-mime-application-x-scratch-project-48.png /usr/share/icons/hicolor/48x48/mimetypes/gnome-mime-application-x-scratch-project.png
+cp -n icons/gnome-mime-application-x-scratch-project-128.png /usr/share/icons/hicolor/128x128/mimetypes/gnome-mime-application-x-scratch-project.png
+gtk-update-icon-cache /usr/share/icons/hicolor
+update-mime-database /usr/share/mime
+cp -f icons/scratch2-editor.desktop /usr/share/applications/
+
 cat << EOF
 Do not forget to install the following packages!
   1. # dnf install libXt.i686
