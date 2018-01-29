@@ -6,6 +6,10 @@
 # http://www.zealfortechnology.com/2012/05/install-adobe-air-on-fedora.html
 # https://aur.archlinux.org/packages/adobe-air-sdk
 # https://aur.archlinux.org/packages/scratch2/
+#
+# Desktop entry
+# https://aur.archlinux.org/cgit/aur.git/tree/scratch2.desktop?h=scratch2
+#
 
 
 # Adobe Air installation path
