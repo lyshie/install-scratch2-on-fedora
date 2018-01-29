@@ -13,7 +13,7 @@ AIR_FILE="/tmp/AdobeAIRSDK.tbz2"
 AIR_TARGET="/opt/adobe-air-sdk"
 
 # Scratch2 installation path
-SCRATCH2_VERSION="453"
+SCRATCH2_VERSION="458.0.1"
 SCRATCH2_FILE="Scratch-${SCRATCH2_VERSION}.air"
 SCRATCH2_TARGET="/opt/airapps/scratch2"
 
@@ -61,7 +61,8 @@ cat << EOF
 Do not forget to install the following packages!
   1. # dnf install libXt.i686
   2. # dnf install gtk2.i686
-  3. # dnf install nss.i686
+  3. # dnf install nss.i686 nss-softokn.i686 nss-util.i686
   4. # dnf install nspr.i686
-  5. # dnf install libxml2.i686
+  5. # dnf install libxml2.i686 libxslt.i686
+  6. # dnf install kdelibs3.i686 qt3.i686
 EOF
