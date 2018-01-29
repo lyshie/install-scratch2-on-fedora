@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Scratch 2
+Comment=You can program your own interactive stories, games, and animations
+Exec=scratch2 %f
+StartupNotify=true
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=scratch2-editor
+Categories=Development;Education;
+MimeType=application/x-scratch-project;
+Keywords=Build;Develop;
